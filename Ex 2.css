@@ -1,0 +1,19 @@
+body {
+    display: flex; 
+    margin: 0; 
+}
+
+section {
+    display: inline-block; 
+    width: 50%; 
+    height: 100vh; 
+    overflow-y: auto; 
+    
+}
+
+section:nth-child(1) {
+    background-color: rgb(132, 186, 182);
+}
+section:nth-child(2) {
+    background-color: rgb(141, 193, 151);
+}
