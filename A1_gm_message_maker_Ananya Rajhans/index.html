@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+
+    <meta charset="utf-8">
+    
+    <!-- Insert relevant content inside the following meta tags-->
+    <meta name="author" content="Author Name">
+    <meta name="description" content="This is a Good Morning Message Maker">
+    <meta property="og:title" content="Good Morning Message Maker"/>
+    <meta property="og:description" content="This is a Good Morning Message Maker"/>
+    
+    <title>Good Morning Message Maker</title>
+    
+    <!-- No need to edit this-->
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+
+    <!-- Links to boilerplate CSS and JS files -- DO NOT CHANGE or EDIT THESE!!! -->
+    <link href="./template-files/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./template-files/script.js" defer></script> 
+    <script type="text/javascript" src="./template-files/html2canvas.js" defer></script> 
+
+
+
+    <!-- Links to YOUR CSS and JS files -->
+    <link href="./style-to-edit.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./script-to-edit.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Lobster+Two:ital@1&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+
+    <header id="head">        
+        
+        <!--DO NOT EDIT THIS -->
+        <button id="openPopup" onclick="showPopup()"> ? </button>
+        
+        <!--Insert your Names after the dash -->
+        <h1>'Good Morning Message Maker' – Annie Vaithara & Ananya Rajhans</h1>
+    
+    </header>
+    <main>
+
+        <section id="input">
+            <label for="dropdown">Choose Image</label>
+            <br>
+            <select name="dropdown-menu" id="dropdown" onchange="chooseImage()">
+                <option value="">Select an Image</option>
+                <option value="./images/flower 1.jpg">Flowers</option>
+                <option value="./images/sunrise 3.jpg">Sunrise</option>
+                <option value="./images/still life 1.jpg">Still Life</option>
+            </select>
+            <br>
+            <hr>
+            <label for="texy">Change Heading: </label>
+            <input type="text" id="texy" placeholder="Type to change heading">
+            <button id="sub" onclick="hea()">Submit</button>
+            <br>
+            <hr>
+            <label for="texy2">Change Sub-heading: </label>
+            <input type="text" id="texy2" placeholder="Type to change sub-heading">
+            <button id="sub2" onclick="hea2()">Submit</button>
+            <br>
+            <hr>
+            <label for="fontoption">Change Font:</label>
+            <br>
+            <input type="radio" id="font1" name="fontoption" value="Lobster Two ,cursive" oninput="fontchoice1()">
+            <label for="font1">Font option 1</label>
+            <br>
+            <input type="radio" id="font2" name="fontoption" value="Barriecito" oninput="fontchoice2()">
+            <label for="font2">Font option 2</label>
+            <br>
+            <input type="radio" id="font3" name="fontoption" value="Shrikhand" oninput="fontchoice3()">
+            <label for="font3">Font option 3</label>
+            <br>
+            <hr>
+            <label for="dropdown2">Choose Colour:</label>
+            <br>
+            <select name="dropdown-menu" id="dropdown2" onchange="chooseColour()">
+                <option value="">Select a Colour</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+            </select>
+            <br>
+            <hr>
+            <label for="range-slider">Change Font Size:</label>
+            <br>
+            <input type="range" id="fonsize" name="range-slider" min="20" max="100" oninput="adjustFontSize()">
+            <br>
+            <hr>
+            <label for="strokeInput">Change Font Stroke:</label>
+            <input type="number" id="strokeInput" min="0" value="0" onchange="applyTextStroke()">
+        </section>
+    
+        <!-- Button to Save Image | DO NOT EDIT THIS -->
+        <button id="save-img">Save Image</button>
+    
+        <section id="output">
+            <div id="output-canvas">
+                <img id="imgChoice" src="" alt="Selected Image">
+                <h1 id="info"></h1>
+                <h2 id="info2"></h2>
+            </div>
+        </section>
+    
+    </main>
+    
+    <!--DO NOT EDIT THIS DIV -->
+    <div id="popupCover" onclick="hidePopup()"></div>
+
+    <!-- 
+        Once you are done with your assignment, replace the instructions text inside the div with id "popup" with the following text: This tool was programmed by [insert names], as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute. 
+    -->
+    <div id="popup">
+
+         <p>
+            Coding for the Web '23/24 --- Assignment 1:
+        </p>    
+        <hr>       
+        <p>
+            This tool was programmed by Ananya Rajhans and Annie Vaithara, as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute.
+        </p> 
+  
+        <hr>
+
+    </div>
+
+</body>
