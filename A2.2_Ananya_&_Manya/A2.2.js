@@ -176,14 +176,24 @@ let generateGallery = () => {
     return (gallery.innerHTML = galleryItemsData.map((x) => {
         let {id,letter,Image,p} = x;
         return `
-        <div class="image-item" id=${id}>
-          <div class="letter">${letter}</div>
-          <img src=${Image} class="image" />
-          <p>${p}</p>
-      </div>
-      `
+              <div class="image-item" id=${id}>
+                <div class="letter">${letter}</div>
+                <img src=${Image} class="image" />
+                <p>${p}</p>
+              </div>
+              `;
+      } else {
+        return `
+              <div class="image-item" id=${id}>
+                <img src=${Image} class="image" />
+                <p>${p}</p>
+              </div>
+              `;
+      }
     })
-    .join(''));
+    .join(""));
 };
+
+generateGallery();
 
 generateGallery();
