@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 11 Exercise</title>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo">
+        <div class="search">
+            <input type="text" id="search-bar">
+        </div>
+    </header>
+    <section id="landing_page">
+        <div id="carousel"> 
+            <div class="carousel">
+                <div class="slides">
+                  <img src="assets/movie.jpg" alt="slide image" class="slide">
+                  <img src="assets/play.jpg" alt="slide image" class="slide">
+                  <img src="assets/isk.jpg" alt="slide image" class="slide">
+                  <img src="assets/sports.jpg" alt="slide image" class="slide">
+                  <img src="assets/events.jpg" alt="slide image" class="slide">
+                </div>
+                <div class="controls">
+                  <div class="control prev-slide">&#9668;</div>
+                  <div class="control next-slide">&#9658;</div>
+                </div>
+              </div>
+        </div>
+        <div class="circle">
+            <div class="image-container">
+                <img src="" alt="" id="selected-image">
+            </div>
+            <div class="dropdown-container">
+                <select name="cities" id="dropdown">
+                    <option>Please select</option>
+                    <option value="mum">Mumbai</option>
+                    <option value="del">Delhi_NCR</option>
+                    <option value="ben">Bengaluru</option>
+                    <option value="hyd">Hyderabad</option>
+                    <option value="ahm">Ahmedabad</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="options"> 
+            <div class="select movies"> <p>Movies</p> </div>
+            <div class="select stream"> <p>Stream</p> </div>
+            <div class="select events"> <p>Events</p> </div>
+            <div class="select plays"> <p>Plays</p> </div>
+            <div class="select sports"> <p>Sports</p> </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
