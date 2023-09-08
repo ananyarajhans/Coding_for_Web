@@ -1,0 +1,298 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). Some properties have already been declared */
+
+body {
+  padding: 40px 10%;
+  background-color: rgb(235, 235, 235) ;  
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+section > h2 {
+text-align: center;
+line-height: 1;
+border-bottom: 1px solid black;
+padding-bottom: 8px;
+}
+
+section > em {
+display: block;
+margin: 8px 0;
+text-align: center;
+}
+
+section > div {padding: 10px;}
+
+
+#s6 > div {background-color: #B298DC;}
+#s7 > div {background-color: #BDC696;}
+
+
+
+/* SECTION 1 */
+/* ----------------------------------------------------- */
+
+
+#s1 > div > p {
+  margin: 0;
+}
+
+#s1 > div {
+  background-color: lightgoldenrodyellow;
+  column-count: 3;
+}
+  
+
+/* SECTION 2 */
+/* ----------------------------------------------------- */
+
+#s2 > div {
+  background-color: #CDEAC0;
+}
+
+#s2 > div > div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+
+
+/* SECTION 3 */
+/* ----------------------------------------------------- */
+#s3 {
+  flex-wrap: wrap; 
+  
+}
+
+#s3 > div {
+  background-color: #FF5964;
+  flex: 1;
+  flex-direction: row;
+  padding: 10px;
+  display: flex; 
+  flex-wrap: nowrap;
+}
+
+#s3 > div > div {
+  width: 400px;
+  background-color: white;
+  margin: 10px;
+  margin: 5px;
+  
+}
+
+
+
+/* SECTION 4 */
+/* ----------------------------------------------------- */
+
+#s4 > div {
+  background-color: #B8F3FF;
+ 
+        
+}
+
+#s4 > div > div {
+  background-color: white;
+  margin: 10px;
+}
+
+#s4 > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#s4 > div > div {
+  flex: 1;
+  background-color: lightgreen;
+  padding: 15px;
+}
+
+
+
+/* SECTION 5 */
+/* ----------------------------------------------------- */
+
+#s5 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#s5 > div > span {
+  background-color: #B298DC;
+  padding: 10px;
+  margin: 10px;
+}
+
+#s5 > button {
+  padding: 10px;
+  background-color: #BDC696;
+  font-family: 'FT88', monospace;
+  margin: 10px;
+  display: none;
+}
+
+
+
+#box {
+ background-color: #B8F3FF;
+ padding: 10px;
+ /* display: none; */
+ visibility: hidden;
+ width: 120px;
+ 
+}
+
+#box > ul {
+  margin: 0;
+  padding: 10px;
+} 
+
+#s2 {
+  height: 70vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#s2 > div {
+  padding: 10px;
+}
+
+#s2 > div:first-child {
+  height: 40px; 
+}
+
+#s2 > div > div:first-child { 
+  background-color:#FF5964;
+}
+
+#s2 > div:last-child {
+  flex-grow: 1; 
+}
+
+#s2 > div > div:last-child { 
+  background-color:beige;
+}
+
+@media screen and (max-width: 1024px) {
+  #s1 div {
+    background-color: #B298DC;
+    column-count: 2;
+}
+
+#s1 p {
+  font-size: 16px;
+}
+
+#s2 > div > div:first-child { 
+  background-color:#B298DC;
+}
+
+#s2 > div > div:last-child { 
+  background-color:#B8F3FF;
+}
+
+#s3 div div:nth-child(1){
+  background-color: #B298DC;
+  
+}
+#s3 div div:nth-child(2){
+  background-color: #B298DC;
+  
+}
+#s3 div div:nth-child(3){
+  background-color: #B298DC;
+  
+}
+#s3 div div:nth-child(4){
+  background-color: #B298DC;
+  
+}
+
+#s3 > div {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#s3 > div > div {
+  width: calc(50% - 10px);
+  background-color: lightblue;
+  margin: 5px;
+  padding: 10px;
+}
+
+#s4 > div {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  #s1 div {
+    background-color: #B8F3FF;
+    column-count: 1;
+}
+
+#s1 p {
+  font-size: 14px;
+}
+
+#s2 > div > div:first-child { 
+  background-color:azure;
+}
+
+#s2 > div > div:last-child { 
+  background-color:aquamarine;
+}
+
+#s3 div div:nth-child(1) {
+  background-color:azure;
+  
+}
+#s3 div div:nth-child(2) {
+  background-color:azure;
+  
+}
+#s3 div div:nth-child(3) {
+  background-color:azure;
+  
+}
+#s3 div div:nth-child(4) {
+  background-color:azure;
+  
+}
+
+#s3 > div {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#s3 > div > div {
+  width: 100%;
+  background-color: lightslategray;
+  margin: 5px 0px;
+  padding: 10px;
+}
+
+#s4 > div {
+  flex-direction: column;
+  align-items: center;
+}
+
+  
+}
