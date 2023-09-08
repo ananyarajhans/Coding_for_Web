@@ -1,0 +1,50 @@
+#button-1 {
+    background-color:azure;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-color:black;
+    text-align: center;
+    padding: 4px;
+    cursor: grab;
+}
+
+#button-2 {
+    background-color:azure;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-color:black;
+    text-align: center;
+    padding: 4px;
+    cursor: grab;
+}
+
+#button-3 {
+    background-color:azure;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-color:black;
+    text-align: center;
+    padding: 4px;
+    cursor: grab;
+}
+
+#menu-1 {
+    height: 400px;
+    width: 400px;
+    background-color:aquamarine;
+    text-align: center;
+    
+}
+
+#menu-2 {
+    height: 400px;
+    width: 400px;
+    background-color:blueviolet;
+    position: absolute;
+    right: 700px;
+    top: 95px;
+    text-align:center;
+}
